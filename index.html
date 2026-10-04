@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlust Voyages | Foreign Tours & Travel</title>
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Custom CSS (after Bootstrap so it can override) -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <!-- NAVBAR (Bootstrap – collapses on small screens) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">
+        <i class="bi bi-globe2 me-2"></i>Wanderlust Voyages
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO (Bootstrap) -->
+  <section id="home" class="hero-section d-flex align-items-center text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 order-lg-1 order-2">
+          <h1 class="display-4 fw-bold mb-3">Discover the World with Confidence</h1>
+          <p class="lead mb-4">Hand-crafted foreign tours, expert local guides and unforgettable experiences across Europe, Asia, Africa and beyond.</p>
+          <a href="#packages" class="btn btn-warning btn-lg me-2">Explore Packages</a>
+          <a href="#contact" class="btn btn-outline-light btn-lg">Get a Quote</a>
+        </div>
+        <div class="col-lg-5 order-lg-2 order-1 mb-4 mb-lg-0 text-center">
+          <!-- Hidden on phones, shown from md and up -->
+          <div class="d-none d-md-inline-block hero-badge p-4 rounded-4 shadow">
+            <h3 class="mb-0"><i class="bi bi-star-fill text-warning"></i> 4.9/5</h3>
+            <small>Rated by 12 000+ travellers</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT (Bootstrap multi-column – text first on mobile) -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6 order-lg-1">
+          <h2 class="section-title mb-3">Why Choose Wanderlust Voyages?</h2>
+          <p class="text-muted">We specialise in carefully curated foreign tours that combine iconic landmarks with authentic local culture. Whether you seek adventure, relaxation or cultural immersion, our expert team designs journeys that leave lasting memories.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Tailor-made itineraries</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>24/7 on-trip support</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Small-group & private options</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Sustainable travel practices</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary mt-2">Talk to a Travel Expert</a>
+        </div>
+        <div class="col-lg-6 order-lg-2">
+          <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=80" alt="Travellers exploring a foreign city" class="img-fluid rounded-4 shadow about-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TASK 1: POPULAR DESTINATIONS (Pure CSS only) ========== -->
+  <section id="destinations" class="destinations-section">
+    <h2 class="destinations-heading">Popular Destinations</h2>
+    <p class="destinations-subtitle">Hand-picked places our travellers love the most</p>
+
+    <div class="destinations-grid">
+      <article class="destination-card">
+        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80" alt="Paris, France">
+        <div class="destination-body">
+          <h3>Paris, France</h3>
+          <p>City of lights, art and romance. From the Eiffel Tower to hidden bistros.</p>
+          <span class="price">from $899</span>
+        </div>
+      </article>
+      <article class="destination-card">
+        <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=600&q=80" alt="Venice, Italy">
+        <div class="destination-body">
+          <h3>Venice, Italy</h3>
+          <p>Glide through canals and discover centuries of history and cuisine.</p>
+          <span class="price">from $1 050</span>
+        </div>
+      </article>
+      <article class="destination-card">
+        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80" alt="Bali, Indonesia">
+        <div class="destination-body">
+          <h3>Bali, Indonesia</h3>
+          <p>Tropical paradise of temples, rice terraces and vibrant culture.</p>
+          <span class="price">from $1 199</span>
+        </div>
+      </article>
+      <article class="destination-card">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80" alt="Tokyo, Japan">
+        <div class="destination-body">
+          <h3>Tokyo, Japan</h3>
+          <p>Where ancient tradition meets futuristic neon and exquisite food.</p>
+          <span class="price">from $1 450</span>
+        </div>
+      </article>
+      <article class="destination-card">
+        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=80" alt="Santorini, Greece">
+        <div class="destination-body">
+          <h3>Santorini, Greece</h3>
+          <p>Iconic white-washed villages perched above the Aegean Sea.</p>
+          <span class="price">from $980</span>
+        </div>
+      </article>
+      <article class="destination-card">
+        <img src="https://images.unsplash.com/photo-1528183429752-a91b6b6b2b48?w=600&q=80" alt="Cape Town, South Africa">
+        <div class="destination-body">
+          <h3>Cape Town, South Africa</h3>
+          <p>Dramatic mountains, vibrant culture and world-class wine.</p>
+          <span class="price">from $1 320</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TOUR PACKAGES (Bootstrap cards – 1 / 2 / 3 columns) -->
+  <section id="packages" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Featured Tour Packages</h2>
+        <p class="text-muted">All-inclusive experiences designed for every type of traveller</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 package-card">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80" class="card-img-top" alt="European Explorer">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">European Explorer</h5>
+              <p class="card-text text-muted flex-grow-1">12 days across Paris, Rome, Barcelona and Amsterdam.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold text-primary">$2 499</span>
+                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#packageModal">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 package-card">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80" class="card-img-top" alt="Southeast Asia Adventure">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Southeast Asia Adventure</h5>
+              <p class="card-text text-muted flex-grow-1">15 days in Thailand, Vietnam and Cambodia.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold text-primary">$1 899</span>
+                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#packageModal">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 package-card">
+            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=80" class="card-img-top" alt="Mediterranean Escape">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Mediterranean Escape</h5>
+              <p class="card-text text-muted flex-grow-1">10 days of sun, sea and culture in Greece and the Amalfi Coast.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold text-primary">$2 150</span>
+                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#packageModal">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT (Bootstrap) -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <h2 class="section-title mb-3">Plan Your Next Journey</h2>
+          <p class="text-muted">Tell us about your dream destination and travel dates. Our experts will craft a personalised proposal within 24 hours.</p>
+          <ul class="list-unstyled mt-4">
+            <li class="mb-3"><i class="bi bi-geo-alt-fill text-primary me-2"></i> 45 Independence Ave, Astana, Kazakhstan</li>
+            <li class="mb-3"><i class="bi bi-telephone-fill text-primary me-2"></i> +7 (7172) 123-456</li>
+            <li class="mb-3"><i class="bi bi-envelope-fill text-primary me-2"></i> hello@wanderlustvoyages.kz</li>
+          </ul>
+          <!-- Shown ONLY on phones -->
+          <div class="d-md-none alert alert-info mt-3">
+            <i class="bi bi-phone me-1"></i> Prefer WhatsApp? Message us on +7 700 123 45 67
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="col-12">
+              <label for="destination" class="form-label">Preferred Destination</label>
+              <select class="form-select" id="destination">
+                <option selected>Choose...</option>
+                <option>Europe</option>
+                <option>Asia</option>
+                <option>Africa</option>
+                <option>Americas</option>
+                <option>Oceania</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4"></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary btn-lg">Send Enquiry</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+          <p class="mb-0 small">&copy; 2025 Wanderlust Voyages. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal (extra Bootstrap component) -->
+  <div class="modal fade" id="packageModal" tabindex="-1" aria-labelledby="packageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="packageModalLabel">Package Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Sample package details. In a real project this content would be dynamic.</p>
+          <ul>
+            <li>Return flights included</li>
+            <li>4-star hotels with breakfast</li>
+            <li>Guided city tours</li>
+            <li>Airport transfers</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="#contact" class="btn btn-primary" data-bs-dismiss="modal">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
