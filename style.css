@@ -46,10 +46,9 @@ body {
   width: 100%;
 }
 
-/* ============================================================
-   TASK 1 – MANUAL MEDIA QUERIES (Popular Destinations)
+/* 
    Mobile-first • CSS Grid • NO Bootstrap layout classes
-   ============================================================ */
+    */
 
 .destinations-section {
   padding: 3rem 1.25rem;
